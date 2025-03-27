@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- {%load static%} -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autograde Insight</title>
+    <!-- <link rel="stylesheet" href= {% static "cssfiles/style.css" %}> -->
+    
+</head>
+<body>
+    <div class="container">
+        <!-- 3D Background Elements -->
+        <div class="background">
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="engineering-grid"></div>
+            <div class="circuit-path"></div>
+        </div>
+
+        <!-- Hero Section -->
+        <header class="hero">
+            <h1 class="animate-slide">
+                Auto<span class="gradient-text">grade</span> Insight
+            </h1>
+            <p class="animate-slide delay-1">Revolutionizing Academic Assessment Through Automation</p>
+            
+            <!-- Login/Register Buttons -->
+            <div class="cta-buttons animate-slide delay-2">
+                <a href="{% url 'login' %}">
+                <button class="btn primary-btn">
+                    <span class="btn-content">Login</span>
+                </button>
+                <a/>
+                <a href="{% url 'register' %}">
+                <button class="btn secondary-btn">
+                    <span class="btn-content">Register</span>
+                </button>
+                <a/>
+            </div>
+        </header>
+           <!-- Login Modal -->
+        <!-- <div id="loginModal" class="modal">
+            <div class="modal-content glass">
+                <span class="close">&times;</span>
+                <h2>Welcome Back!</h2>
+                <form id="loginForm" class="auth-form">
+                    <div class="form-group">
+                        <input type="email" id="loginEmail" required placeholder="Email">
+                        <span class="focus-border"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="loginPassword" required placeholder="Password">
+                        <span class="focus-border"></span>
+                    </div>
+                  
+                    <button type="submit" class="submit-btn">
+                        <span>Login</span>
+                        <div class="btn-glow"></div>
+                    </button>
+                   
+                </form>
+            </div>
+        </div>
+ -->
+        <!-- Register Modal -->
+        <!--  <div id="registerModal" class="modal">
+            <div class="modal-content glass">
+                <span class="close">&times;</span>
+                <h2>Create Account</h2>
+                <form id="registerForm" class="auth-form">
+                    <div class="form-group">
+                        <input type="text" id="registerName" required placeholder="Full Name">
+                        <span class="focus-border"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="registerEmail" required placeholder="Email">
+                        <span class="focus-border"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="registerPassword" required placeholder="Password">
+                        <span class="focus-border"></span>
+                    </div>
+                    <div class="form-group">
+                        <!-- <select id="registerRole" required> -->
+                            <!-- <option value="">Select Role</option>
+                            <option value="student">Student</option>
+                            <option value="teacher">Teacher</option> 
+                        </select>
+                        <span class="focus-border"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="registerInstitution" required placeholder="Institution">
+                        <span class="focus-border"></span>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <span>Register</span>
+                        <div class="btn-glow"></div>
+                    </button>
+                </form>
+            </div> 
+        </div>  -->
+        <!-- Features Section -->
+        <section class="features">
+            <div class="feature-card animate-fade-in">
+                <div class="feature-icon">📝</div>
+                <h3>Easy Assignment Submission</h3>
+                <p>Upload your assignments seamlessly through our intuitive interface</p>
+            </div>
+            <div class="feature-card animate-fade-in delay-1">
+                <div class="feature-icon">⚡</div>
+                <h3>Automatic Grading</h3>
+                <p>Advanced algorithms grade assignments instantly with high accuracy</p>
+            </div>
+            <div class="feature-card animate-fade-in delay-2">
+                <div class="feature-icon">📊</div>
+                <h3>Detailed Analytics</h3>
+                <p>Get comprehensive insights into student performance</p>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about">
+            <h2 class="animate-fade-in">About Autograde Insight</h2>
+            <p class="animate-fade-in delay-1">
+                Autograde Insight is revolutionizing the way academic assignments are handled. 
+                Our platform streamlines the grading process, making it easier for both students 
+                and teachers while maintaining high standards of assessment.
+            </p>
+            <div class="about-grid animate-fade-in delay-2">
+                <div class="about-item">
+                    <h3>For Students</h3>
+                    <p>Submit assignments easily and get instant feedback</p>
+                </div>
+                <div class="about-item">
+                    <h3>For Teachers</h3>
+                    <p>Automate grading and focus on what matters most - teaching</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Creator Section -->
+        <section class="creator">
+            <div class="creator-card animate-fade-in">
+                <div class="creator-avatar">SJ</div>
+                <h3>Created by Surbhi Jaiswal</h3>
+                <p>Student at MEDICAPS UNIVERSITY</p>
+                <div class="creator-badge">
+                    <span>⭐ Innovation in Education</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>© 2024 Autograde Insight. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
